@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-  baseURL: "https://mini-crm-88ft.onrender.com/api",
+  baseURL: `${import.meta.env.VITE_BACKEND_URL}/api`,
   withCredentials: true, 
 });
 
